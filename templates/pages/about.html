@@ -1,0 +1,268 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+     About Us
+{% endblock title %}
+
+{% block content %}
+   <section class="home_banner_area hero"  id="about">
+    <div class="banner_inner d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="banner_content d-flex flex-md-row flex-column">
+              <div class="banner-left text-md-right">
+                <h1 class="text-uppercase">About Us</h1>
+              </div>
+              <!--
+              <div class="banner-right position-relative">
+                <p>
+                  Boma properties.
+                </p>
+                <span class="main_btn mt-4 mt-md-0" href="#">
+                  <a href="" >Home</a> 
+                  <i class="fa fa-arrow-right mx-2"></i>
+                  <a href="#">About</a> 
+                </span>
+              </div>
+            -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <section class="statistic" id="about">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h3>Our Company<br>Boma properties</h3>
+            <p>The Boma properties is a solution supporting the Affordable Housing Program targeting delivery of decent and affordable housing to low and middle-income households. It aims to reduce the gap between demand and supply for housing in Kenya and provide the main component of a large framework established towards the 200,000 Affordable Houses annually.
+              <h3>Why you should choose us</h3>
+              <ul>  
+                <li>1. We offer land verification and authentication.</li><br>
+                <li>2. We sell, buy, and rent luxury properties at affordable rates.</li><br>
+                <li>3. We offer a conducive platform for property owners to showcase their services.</li><br>
+                <li>4. We have well trained professionals as consultants, developers and agents.</li><br>
+                <li>5. We are budget friendly.</li>
+                <li>  </li>
+              </ul></p>
+          </div>
+          <div class="col-12 col-lg-6 statistic-wrapper">
+            <div class="statistic-box text-center">
+              <p>58</p>
+              <p>Clients</p>
+            </div>
+            <div class="statistic-box text-center">
+              <p>200</p>
+              <p>Apartments</p>
+            </div>
+            <div class="statistic-box text-center">
+              <p>14</p>
+              <p>Awards</p>
+            </div>
+            <div class="statistic-box text-center">
+              <p>24</p>
+              <p>Employees</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="how-it-works">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-12 works-title">
+            <h3>How it works?</h3>
+            <p> You wish be a realtor agent with Boma Properties? <br> All you have to do is complete some few steps and arrange all relevant information while pending for your response before the end of the day. </p>      
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="work-box animate">
+              <div class="work-box-number">
+                <p>01</p>
+              </div>
+              <div class="work-box-title">
+                <p class="left">01</p>
+                <p class="left">Find Your Location</p>
+              </div>
+              <div class="work-box-text">
+                <p>Here you search for the location you want to cover in your listings and then move to the next step. </p>
+              </div>          
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="work-box animate">
+              <div class="work-box-number">
+                <p>02</p>
+              </div>
+              <div class="work-box-title">
+                <p class="left">02</p>
+                <p class="left">Find Appartment</p>
+              </div>
+              <div class="work-box-text">
+                <p>After you've picked a location, now you search for avialable properties in that location for your listings. </p>
+              </div>         
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="work-box animate">
+              <div class="work-box-number">
+                <p>03</p>
+              </div>
+              <div class="work-box-title">
+                <p class="left">03</p>
+                <p class="left">Make Contact</p>
+              </div>
+              <div class="work-box-text">
+                <p>Once you've completed step one and two now you can contact us and you'll get back to you with a confirmation. </p>
+              </div>          
+            </div>
+          </div>
+        </div>
+        <!-- Services Area -->
+        <div class="row work-services">
+          <div class="col-12 work-services-title">
+            <h3>Services</h3>
+            <p>At Boma Properties, we handle the operations, consulting, maintenance,<br> and administration of properties rentals to prospective clients. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <div class="work-service-image">
+            </div>
+          </div>
+          <div class="col-12 col-md-5 work-service-info">
+            <h4>Selling</h4>
+            <p>We operate a robust marketing strategy that helps us to sell properties to prospective clients. No matter your situation, our Capital Markets Consulting Experts will work with you to structure the best deals and negotiate the best terms-matching with the right opportunity every time, so you are leaving nothing to chance.</p>
+            
+            <h4>Building</h4>
+            <p>We are rapidly growing, however our commitment and dedication towards exhibiting high skills in project delivery is constantly renewed to position us adequately for effective service and project delivery within the stipulated time and average cost to meet the client’s demand, value and return on their investment. Nevertheless, our innovative approach to facility management makes us the construction company of choice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!------------------------------------------------ ADD SECTION -->
+    <section class="add">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <div class="add-image add1">
+              <!-- image added via css -->
+              <div class="add-image-info flex-center">
+                <img src="{%static 'images/pointer.svg'%}" class="left" alt="">
+                <!-- image location -->
+                <p>Our Vision</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 flex-center">
+            <div class="add-info">
+              <!-- Add title -->
+              <h4>Our Vision</h4>
+              <!-- Add Info -->
+              <p>To actualize comfortable living for all classes of society everyone deserves a good home. With our large pool of property owners as well as those seeking property for investors and property owners as well as those seeking properties for lease or rent at friendly neihborhoods and convenient rate.Our properties are our bound</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 flex-center">
+            <div class="add-info ">
+              <!-- Add title -->
+              <h4>What we do</h4>
+              <!-- Add info -->
+              <ul>  
+                <li>1. Property Management/Administration.</li><br>
+                <li>2. Property Listing /Sales/Lease/ Options.</li><br>
+                <li>3. Property/Land Verification.</li><br>
+                <li>4. Property Developers.</li><br>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="add-image right add2">
+              <!-- image added via css -->
+              <div class="add-image-info add-image-info2 flex-center">
+                <img src="{%static 'images/pointer.svg'%}" class="left" alt="">
+                <!-- image location -->
+                <p>What we do</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="add-image add3">
+              <!-- image added via css -->
+            </div>
+          </div>
+          <div class="col-12 col-md-5 flex-center">
+            <div class="add-info add3-info">
+              <!-- Add title -->
+              <h4>Boma Properties</h4>
+              <!-- Add info -->
+              <p>Boma Properties offers property owners, developers and buyers a viable housing market. Customers can source and connect with professional agents for the most advanced and eco-friendly housing. Established in 2021, Boma Properties believes everyone deserves a home with the most advanced technology and Eco-Friendly means.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!------------------------------------------------ AGENTS SECTION -->
+  <section id="agents" class="agents">
+    <div class="container">
+      <div class="row agents-services">
+        <div class="col-12 agents-title">
+          <h3>Meet Our Agents</h3>
+          <p>They provide one of the most professional, informative, loyal and dedicated services<br> in the real estate industry. Client’s satisfaction is their number one priority.</p>
+        </div>
+      </div>
+      
+        
+      <div class="row">
+          {% if realtors %}
+        {% for realtor in realtors %}
+          <!-- Agent  -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card">
+              <div class="card-img", style="">
+                <!-- Agent Image  -->
+                <img src="{{realtor.photo.url}}" alt="">
+              </div>
+              <div class="appartment-info">
+                <div class="appartment-title">
+                  <!-- Agent Title  -->
+                  <p>Realtor</p>
+                </div>
+                <div class="appartment-title">
+                  <div class="left agent-name">
+                    <!-- Agent name  -->
+                    <p> {{realtor.name}}</p>
+                  </div>
+                  <div class="agent-social right flex-center">
+                    <a href="#"><img src="{%static 'images/facebook.svg'%}" alt=""></a>
+                    <a href="#"><img src="{%static 'images/twitter.svg'%}" alt=""></a>
+                    <a href="#"><img src="{%static 'images/dribble.svg'%}" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          {% endfor %}
+          {% else %}
+          <div class="col-md-12">
+            <p>No Realtors Available</p>
+        </div>
+      {% endif %}
+
+
+
+      </div>
+    </div>
+  </section>
+{% endblock content %}
+
