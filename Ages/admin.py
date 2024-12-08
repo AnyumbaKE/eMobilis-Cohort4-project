@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import AgentsVerification
+from .models import AgesVerification
 
 # Register your models here.
 class AGISVerificationAdmin(admin.ModelAdmin):
@@ -11,4 +11,4 @@ class AGISVerificationAdmin(admin.ModelAdmin):
 
 
 # Register your models here.
-admin.site.register(AgentsVerification, AGISVerificationAdmin)
+admin.site.register(AgesVerification, AGISVerificationAdmin)

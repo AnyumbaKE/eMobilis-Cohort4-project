@@ -25,9 +25,6 @@ def register_view(request):
 				else:
 					user = User.objects.create_user(username=username,password=password,email=email,first_name=first_name,last_name
 						=last_name)
-					# auth.login(request , user)
-					# messages.success(request,'You Are Now LoggedIn')
-					# return redirect('pages:index')
 					user.save()
 					messages.success(request,'You Are Now Registered')
 					return redirect('accounts:login_view')

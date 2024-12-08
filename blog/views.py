@@ -1,7 +1,7 @@
 from django.http.response import HttpResponse
 from django.shortcuts import redirect, render
 from django.views.generic import ListView, DetailView
-from listings.choices import price_choices, bedroom_choices, state_choices
+from listings.choices import price_choices, bedroom_choices, county_choices
 from listings.models import Listing
 from .models import Post, Categories, PostComment
 from django.db.models import Q
@@ -13,7 +13,7 @@ from django.http import HttpResponseNotFound, Http404
 def index(request):
     listings = Listing.objects.order_by('-list_date').filter(is_published=True);
     return render(request, 'pages/index.html', {'listings': listings,
-                                                'state_choices': state_choices,
+                                                'county_choices': county_choices,
                                                 'bedroom_choices': bedroom_choices,
                                                 'price_choices': price_choices,
                                                 })

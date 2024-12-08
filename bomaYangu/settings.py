@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'graphene_django',
     'blog',
     'accounts.apps.AccountsConfig',
-    'agents.apps.AgentsConfig',
+    'Ages.apps.AgesConfig',
     'contacts.apps.ContactsConfig',
     'listings.apps.ListingsConfig',
     'pages.apps.PagesConfig',
@@ -145,7 +145,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Media folder settings
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media'
+MEDIA_URL = '/media/'
 
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {

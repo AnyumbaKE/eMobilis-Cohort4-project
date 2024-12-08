@@ -19,7 +19,7 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from graphene_django.views import GraphQLView
-from agents import views
+from Ages import views
 from accounts import views
 from blog.schema import schema
 from contacts import views
@@ -30,7 +30,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pages.urls')),
     path('accounts/', include('accounts.urls')),
-    path('AgentsVerification/', include('agents.urls')),
+    path('AgesVerification/', include('Ages.urls')),
     path('blog/', include('blog.urls')),
     path('contacts/', include('contacts.urls')),
     path('graphql/', GraphQLView.as_view(graphiql=True)),
