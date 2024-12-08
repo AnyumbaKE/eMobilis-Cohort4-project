@@ -42,6 +42,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'graphene_django',
+    'blog',
+    'accounts.apps.AccountsConfig',
+    'agents.apps.AgentsConfig',
+    'contacts.apps.ContactsConfig',
+    'listings.apps.ListingsConfig',
+    'pages.apps.PagesConfig',
+    'realtors.apps.RealtorsConfig',
 
 ]
 
