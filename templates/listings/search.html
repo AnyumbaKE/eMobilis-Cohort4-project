@@ -7,7 +7,7 @@
       <div class="container my-5">
         <div class="row">
           <div class="col-12 text-center white-text">
-            <h1>Search for your Appartments<br>and make your inquiries  </h1>
+            <h1>Search for your Apartments<br>and make your inquiries  </h1>
           </div>
         </div>
         <div class="col-md-6 mx-auto">
@@ -20,17 +20,17 @@
               </div>
 
               <div class="col-md-4 mb-3">
-                <label class="sr-only">City</label>
-                <input type="text" name="city" value="{{ values.city }}" class="form-control" placeholder="City">
+                <label class="sr-only">Town</label>
+                <input type="text" name="town" value="{{ values.town }}" class="form-control" placeholder="Town">
               </div>
 
               <div class="col-md-4 mb-3">
-                <label class="sr-only">State</label>
-                <select name="state" class="form-control">
-                  <option selected="true" disabled="disabled">State (All)</option>
-                  {% for key,value in state_choices.items %}
+                <label class="sr-only">County</label>
+                <select name="county" class="form-control">
+                  <option selected="true" disabled="disabled">County (All)</option>
+                  {% for key,value in county_choices.items %}
                        <option value="{{key}}"
-                       {% if key == values.state %}selected="selected"{% endif %}
+                       {% if key == values.county %}selected="selected"{% endif %}
                        >{{value}}</option>
                     {% endfor %}
                 </select>
